@@ -1,0 +1,12 @@
+// базовые подключения
+@import "vars";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/ui";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/what";
+@import "./components/vision";
+@import "./components/last";
+@import "./components/footer";

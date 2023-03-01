@@ -1,0 +1,39 @@
+.footer {
+  padding: 40px 0 35px;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 49%) -15.36%, rgba(0, 0, 0, 0%) 39.93%),
+    linear-gradient(0deg, rgba(0, 0, 0, 20%), rgba(0, 0, 0, 20%)),
+    linear-gradient(0deg, rgba(0, 0, 0, 49%) 0%, rgba(0, 0, 0, 0%) 107.42%),
+    #1d0259;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__img {
+    margin-bottom: 55px;
+  }
+
+  &__nav {
+    margin-bottom: 20px;
+
+    li {
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .footer {
+    &__img {
+      margin-bottom: 20px;
+    }
+  }
+}

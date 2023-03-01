@@ -1,0 +1,85 @@
+.vision {
+  position: relative;
+  padding-bottom: 65px;
+  background: url("../img/vision-bg.png") center / cover no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0%) 76.55%, #000 96.27%),
+      linear-gradient(360deg, rgba(0, 0, 0, 0%) 84.91%, #000 101.61%),
+      rgba(0, 0, 0, 80%);
+  }
+
+  &__inner {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: -288px;
+      top: -249px;
+      width: 1148px;
+      height: 893px;
+      background: url("../img/vision.png") center / cover no-repeat;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    color: $white-color;
+  }
+
+  &__subtitle {
+    margin-bottom: 42px;
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+    border-radius: 50px;
+    padding: 20px 47px;
+    max-width: 635px;
+    box-shadow: 0 10px 50px rgba(66, 1, 214, 30%);
+    background: rgba(49, 4, 149, 60%);
+
+    p {
+      padding: 5px 0 20px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .vision {
+    &__inner {
+      &::before {
+        left: 163px;
+        right: auto;
+        background-size: 60%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .vision {
+    padding: 50px 0;
+
+    &__content {
+      padding: 25px 20px;
+    }
+
+    &__inner::before {
+      display: none;
+    }
+  }
+}
