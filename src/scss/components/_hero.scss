@@ -1,4 +1,6 @@
 .hero {
+  padding-top: var(--header-height);
+
   &__content {
     position: absolute;
     left: 0;
