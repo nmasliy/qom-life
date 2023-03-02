@@ -78,8 +78,21 @@
       padding: 25px 20px;
     }
 
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__subtitle {
+      margin-bottom: 20px;
+    }
+
     &__inner::before {
-      display: none;
+      left: -50px;
+      top: 150px;
+      bottom: 0;
+      width: 459px;
+      height: 357px;
+      background-size: cover;
     }
   }
 }

@@ -49,25 +49,36 @@
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 768px) {
   .what {
-    &::before {
-      background:
-        linear-gradient(180deg, rgba(0, 0, 0, 0%) 73.73%, #000 90.46%),
-        linear-gradient(0deg, rgba(0, 0, 0, 0%) 93.82%, #000 101.61%),
-        rgba(0, 0, 0, 70%);
-    }
+    padding: 50px 0 36px;
+    background: url("../img/what-mobile.jpg") right / cover no-repeat;
 
-    &__bottom {
-      text-align: center;
+    &__inner {
+      min-height: auto;
     }
 
     &__top {
-      text-align: center;
+      margin-bottom: 67px;
     }
 
     &__title--top {
       margin-bottom: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .what {
+    &::before {
+      background:
+        linear-gradient(180deg, rgba(0, 0, 0, 0%) 91.44%, #000 103.41%),
+        linear-gradient(360deg, rgba(0, 0, 0, 0%) 93.82%, #000 111.22%),
+        rgba(0, 0, 0, 50%);
+    }
+
+    &__inner {
+      padding: 0;
     }
   }
 }

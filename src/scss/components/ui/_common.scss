@@ -85,7 +85,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .title {
     font-size: 34px;
   }
@@ -101,14 +101,14 @@
 
 @media screen and (max-width: 768px) {
   .title {
-    font-size: 28px;
+    font-size: 18px;
   }
 
   .subtitle {
-    font-size: 22px;
+    font-size: 16px;
   }
 
   .small-title {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
