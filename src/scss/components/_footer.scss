@@ -13,12 +13,22 @@
     text-align: center;
   }
 
+  &__link {
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
   &__img {
     margin-bottom: 55px;
   }
 
   &__nav {
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     li {
       margin-bottom: 15px;
