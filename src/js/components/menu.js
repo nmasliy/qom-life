@@ -15,8 +15,6 @@ const scroll = new SmoothScroll('a[href*="#"]', {
 	offset: sectionOffset
 });
 
-console.log(sectionOffset)
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
