@@ -1,17 +1,15 @@
 .socials {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  margin: -8px;
 
   li {
-    margin-right: 16px;
+    margin: 8px;
     transition: $transition;
 
     &:hover {
       transform: scale(1.05);
-    }
-
-    &:last-child {
-      margin-right: 0;
     }
   }
 
